@@ -1,5 +1,3 @@
-import sys
-
 # inp = "{{{**[][][]"
 inp = input()
 
