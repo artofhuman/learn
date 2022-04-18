@@ -16,7 +16,7 @@ def is_seller(name):
     return name[-1] == "m"
 
 
-def find_seller(name):
+def find_seller():
     search_queue = deque()
     search_queue += graph["you"]
 
@@ -32,6 +32,6 @@ def find_seller(name):
                 search_queue += graph[person]
                 visited.append(person)
 
-result = find_seller("anuj")
+result = find_seller()
 
 print(result)
